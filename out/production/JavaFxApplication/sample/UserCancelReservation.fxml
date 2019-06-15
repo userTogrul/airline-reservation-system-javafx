@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserCancelReservationController">
+   <Label layoutX="67.0" layoutY="53.0" text="Cancel Reservation">
+      <font>
+         <Font size="22.0" />
+      </font>
+   </Label>
+   <Label layoutX="67.0" layoutY="113.0" text="Please enter ticket details" />
+    <TextField fx:id="psName" layoutX="67.0" layoutY="161.0" prefHeight="39.0" prefWidth="222.0" promptText="Name" />
+    <TextField fx:id="psSurname" layoutX="327.0" layoutY="161.0" prefHeight="39.0" prefWidth="222.0" promptText="Surname" />
+   <TextField fx:id="psId" layoutX="67.0" layoutY="230.0" prefHeight="39.0" prefWidth="222.0" promptText="Passenger id" />
+   <Button layoutX="465.0" layoutY="57.0" mnemonicParsing="false" onAction="#toMainMenu" text="Main Menu" />
+   <Button layoutX="448.0" layoutY="319.0" mnemonicParsing="false" onAction="#cancelReservation" text="Cancel Resevation" />
+</AnchorPane>
